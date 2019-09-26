@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-3"></div>
+
+  <div class="col-md-6">
+    <section *ngFor="let visit of visits">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ visit.title }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          {{ visit.content }}
+        </mat-expansion-panel>
+      </mat-accordion>
+    </section>
+  </div>
+</div>

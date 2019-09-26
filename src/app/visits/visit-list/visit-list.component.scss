@@ -1,0 +1,15 @@
+.card {
+  margin: 5% auto;
+}
+
+.thead {
+  color: black;
+}
+
+.card .card-header-warning:not(.card-header-icon):not(.card-header-text) {
+  background: linear-gradient(60deg, #19008a, #1620ac);
+}
+
+#addbtn {
+  float: right;
+}

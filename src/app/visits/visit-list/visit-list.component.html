@@ -1,0 +1,63 @@
+<div class="card">
+  <div class="card-header card-header-warning">
+    <h4 class="card-title">Visits List</h4>
+    <p class="card-category">Check and Add Visits</p>
+    <button
+      id="addbtn"
+      mat-raised-button
+      class="btn btn-info"
+      (click)="onCreate()"
+    >
+      Add Customer
+    </button>
+  </div>
+  <div class="card-content table-responsive table-full-width">
+    <table class="table">
+      <thead class="thead">
+        <th style="color: white">empty</th>
+        <th>Company</th>
+        <th>Visits Required</th>
+        <th>Visits Completed</th>
+        <th>Date of last Vist</th>
+        <th>Check Visits</th>
+        <th>Add Visits</th>
+        <th>Edit/Delete</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows">
+          <td>{{ row.id }}</td>
+          <td>{{ row.companyName }}</td>
+          <td>{{ row.requiredVisits }}</td>
+          <td>{{ row.completedVisits }}</td>
+          <td>{{ row.lastVisitDate }}</td>
+          <td>
+            <button
+              mat-raised-button
+              class="btn btn-info"
+              routerLink="{{ row.id }}"
+            >
+              View
+            </button>
+          </td>
+          <td>
+            <button
+              mat-raised-button
+              class="btn btn-info"
+              routerLink="{{ row.id }}/dashboard"
+            >
+              Add
+            </button>
+          </td>
+          <td>
+            <button mat-icon-button>
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

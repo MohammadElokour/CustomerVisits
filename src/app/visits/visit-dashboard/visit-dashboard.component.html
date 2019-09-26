@@ -1,0 +1,251 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">ON-SITE SERVICE FORM</h4>
+        <p class="card-category">InfoGraph</p>
+      </div>
+      <div class="card-body">
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput [matDatepicker]="picker" placeholder="Date" />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Company Name" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Customer Representative" />
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <mat-form-field class="example-full-width">
+              <input matInput type="time" placeholder="Arrival Time" />
+            </mat-form-field>
+          </div>
+          <div class="col-sm-3">
+            <mat-form-field class="example-full-width">
+              <input matInput type="time" placeholder="Completion Time" />
+            </mat-form-field>
+          </div>
+        </div>
+        <br />
+        <div class="col-sm-3">
+          <h4>Purpose of visit:</h4>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" />
+                Delivery/Installation
+                <span class="form-check-sign">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" />
+                Technical Support
+                <span class="form-check-sign">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" />
+                Demo
+                <span class="form-check-sign">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" />
+                Periodical
+                <span class="form-check-sign">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Other" />
+          </mat-form-field>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <h4>Software Concerned (and Version):</h4>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="ArcGIS for Desktop" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="ArcGIS for Server" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Other" />
+          </mat-form-field>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <h4>Problem Exists:</h4>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-check form-check-radio">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ProblemExists"
+                  id="ProblemExists1"
+                  value="option1"
+                  checked
+                />
+                Yes
+                <span class="circle">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-check form-check-radio">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ProblemExists"
+                  id="ProblemExists1"
+                  value="option2"
+                />
+                No
+                <span class="circle">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <textarea
+              matInput
+              placeholder="Problem Description and Solution (if applicable):"
+              rows="5"
+            ></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6"><h5>Problem Solved:</h5></div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-check form-check-radio">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ProblemSolved"
+                  id="ProblemSolved1"
+                  value="option1"
+                  checked
+                />
+                Fully
+                <span class="circle">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-check form-check-radio">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ProblemSolved"
+                  id="ProblemSolved1"
+                  value="option2"
+                />
+                Partially
+                <span class="circle">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-check form-check-radio">
+              <label class="form-check-label">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ProblemSolved"
+                  id="ProblemSolved1"
+                  value="option3"
+                />
+                No
+                <span class="circle">
+                  <span class="check"></span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Remarks" rows="2"></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <textarea
+              matInput
+              placeholder="Customer Remarks"
+              rows="2"
+            ></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Support Representative" />
+          </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+          <button mat-raised-button class="btn btn-info">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<form class="normal-form">
+  <mat-grid-list cols="1" rowHeight="250px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" />
+        <mat-form-field>
+          <input matInput placeholder="Company Name" />
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input type="number" matInput placeholder="Visits Required" />
+          <mat-error>Invalid input.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input type="number" matInput placeholder="Visits Completed" />
+          <mat-error>Invalid input.</mat-error>
+        </mat-form-field>
+        <button id="addbtn" mat-raised-button color="primary" type="submit">
+          Add
+        </button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
